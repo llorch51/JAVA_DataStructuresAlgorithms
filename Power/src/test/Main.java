@@ -9,7 +9,10 @@ public class Main {
 		
 	}
 	
-	public int power(int base, int exp) {
+	public int power(int base, int exp){
+		if(exp < 0) {
+			return -1;
+		}
 		if(exp == 0) {
 			return 1;
 		}
